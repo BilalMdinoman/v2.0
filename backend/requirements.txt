@@ -1,0 +1,9 @@
+# Backend daemon dependencies.
+# The risk engine and paper-execution engine currently use only the Python
+# standard library (dataclasses). These are needed for the later phases:
+# agents, DexScreener polling, Supabase, and Telegram.
+httpx
+supabase
+tenacity
+pydantic
+python-telegram-bot

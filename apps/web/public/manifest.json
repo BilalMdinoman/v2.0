@@ -1,0 +1,16 @@
+{
+  "name": "V.2.0 — Multi-Agent Trading Intelligence",
+  "short_name": "V.2.0",
+  "description": "Seven-agent autonomous AI trading system (paper trading).",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#040a13",
+  "theme_color": "#040a13",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
