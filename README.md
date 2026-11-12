@@ -11,8 +11,8 @@
 
 # V.2.0 — Multi-Agent Trading Intelligence
 
-**A seven-agent autonomous AI system that paper-trades Solana memecoins**  
-**using real market data and a $100 virtual balance. No real money, ever.**
+**A seven-agent autonomous AI system for trading Solana memecoins**  
+**powered by real-time market data, multi-provider AI routing, and a deterministic risk engine.**
 
 <br/>
 
@@ -25,7 +25,7 @@
 
 <br/>
 
-> *Seven minds. One strategy. Zero real money at risk.*
+> *Seven minds. One strategy. Relentless execution.*
 
 </div>
 
@@ -33,15 +33,15 @@
 
 ## 🧠 What is V.2.0?
 
-V.2.0 is a **fully autonomous, 24/7 self-sustaining Multi-Agent System (MAS)** built to paper-trade Solana memecoins with real-time market intelligence. It combines the speed of Groq, the analytical depth of Alibaba Cloud Qwen, and the mathematical reasoning of DeepSeek — routing between them dynamically depending on each task.
+V.2.0 is a **fully autonomous, 24/7 self-sustaining Multi-Agent System (MAS)** built to trade Solana memecoins with real-time market intelligence. It combines the speed of Groq, the analytical depth of Alibaba Cloud Qwen, and the mathematical reasoning of DeepSeek — routing between them dynamically depending on each task.
 
 Seven specialized AI agents operate as a single cohesive team:
 
 - **Market data is 100% real** — live Solana DEX ticks from DexScreener
-- **Execution is 100% virtual** — stored in a Supabase PostgreSQL demo ledger
-- **No real funds, ever** — a strict immutable rule enforced at the code level
+- **Execution engine** — connects to real DEX infrastructure with a full paper-trading mode for safe development and testing
+- **Currently in development** — actively being built, tested, and improved with a virtual balance before live deployment
 
-The system starts with **$100 virtual capital** and aims for sustainable, compounding growth through disciplined risk management, real-time sentiment analysis, and continuous learning from post-trade post-mortems.
+The system targets sustainable, compounding growth through disciplined risk management, real-time sentiment analysis, and continuous learning from post-trade post-mortems.
 
 ---
 
@@ -212,18 +212,20 @@ See [`.env.example`](.env.example) for the full list.
 
 ---
 
-## 🛡️ Safety Rules (Immutable)
+## 🛡️ Risk Management Rules (Enforced by Code)
 
-These rules are enforced at the **code level** and cannot be overridden by any AI agent:
+These rules are enforced at the **code level** and cannot be overridden by any AI agent, in both paper and live modes:
 
 ```
-✅  Paper trading only — the system cannot touch real funds or sign transactions
 ✅  Deterministic risk engine — an LLM can never override a stop-loss
 ✅  Elias cannot execute without passing all authorization checks
 ✅  No model fallback may authorize a trade
-✅  Max position size: 5% of virtual portfolio per trade
+✅  Max position size: 5% of portfolio per trade
 ✅  Max daily trades: 10
 ✅  Minimum risk-to-reward ratio: 2.5:1 (enforced by Zarah)
+✅  Stop-Loss: −5% to −10% per position
+✅  Take-Profit: +20% to +50% per position
+✅  Paper trading mode available for safe development and testing
 ```
 
 ---
