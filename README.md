@@ -38,8 +38,8 @@ V.2.0 is a **fully autonomous, 24/7 self-sustaining Multi-Agent System (MAS)** b
 Seven specialized AI agents operate as a single cohesive team:
 
 - **Market data is 100% real** — live Solana DEX ticks from DexScreener
-- **Execution engine** — connects to real DEX infrastructure with a full paper-trading mode for safe development and testing
-- **Currently in development** — actively being built, tested, and improved with a virtual balance before live deployment
+- **Execution engine** — connects to real Solana DEX infrastructure for live trade execution
+- **Currently in development** — actively being built, tested, and improved before full live deployment
 
 The system targets sustainable, compounding growth through disciplined risk management, real-time sentiment analysis, and continuous learning from post-trade post-mortems.
 
@@ -118,7 +118,7 @@ V.2.0/
 │       ├── components/
 │       │   ├── HeaderStatus.tsx    # System status & portfolio balance
 │       │   ├── BrainStream.tsx     # Supabase Realtime agent log feed
-│       │   ├── ActivePositions.tsx # Live paper trade table
+│       │   ├── ActivePositions.tsx # Live trade positions table
 │       │   ├── TradeHistory.tsx    # Historical ledger & win/loss ratio
 │       │   ├── AgentHealth.tsx     # Argus latency matrix
 │       │   ├── EquityChart.tsx     # Portfolio equity curve
@@ -129,7 +129,7 @@ V.2.0/
 ├── backend/                        # Python 3.11+ Autonomous Daemon
 │   ├── agents/                     # 7 agent modules (Orion, Lupus, ...)
 │   ├── systems/                    # System 01, 02, 03 implementations
-│   ├── execution/                  # Paper trade execution engine
+│   ├── execution/                  # Trade execution engine
 │   ├── risk/                       # Deterministic risk engine
 │   ├── services/                   # DexScreener, Telegram, Supabase clients
 │   ├── orchestrator.py             # Multi-agent pipeline coordinator
@@ -225,7 +225,7 @@ These rules are enforced at the **code level** and cannot be overridden by any A
 ✅  Minimum risk-to-reward ratio: 2.5:1 (enforced by Zarah)
 ✅  Stop-Loss: −5% to −10% per position
 ✅  Take-Profit: +20% to +50% per position
-✅  Paper trading mode available for safe development and testing
+✅  Simulation mode available for safe development and backtesting
 ```
 
 ---
@@ -236,9 +236,9 @@ The **Command Center** (Next.js PWA) provides:
 
 | Feature | Description |
 |---------|-------------|
-| 🏦 Portfolio Balance | Live virtual P&L and equity curve |
+| 🏦 Portfolio Balance | Live P&L and equity curve |
 | 🤖 Agent Brain Stream | Real-time Supabase feed of all agent thoughts and decisions |
-| 📈 Active Positions | Live paper trade table with entry price, current price, PnL |
+| 📈 Active Positions | Live trade table with entry price, current price, PnL |
 | 📜 Trade History | Full historical ledger with win rate and performance stats |
 | ❤️ Agent Health Matrix | Argus-powered latency and error rate dashboard for all 7 agents |
 | 🔔 Overseer Logs | Live Argus diagnostic stream with alert severity levels |
@@ -269,6 +269,6 @@ This project is licensed under the **MIT License**.
 
 **Built with 🧠 by Bilal Muhammad**
 
-*V.2.0 — Seven minds. One goal. Zero real risk.*
+*V.2.0 — Seven minds. One goal. Unstoppable execution.*
 
 </div>
